@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import UserDefault from "../assets/userDefault.svg";
 import Cart from "../assets/cart.svg";
 import MenuIcon from "../assets/menuBar.svg";
-import CloseIcon from "../assets/Close.svg";
+import CloseIcon from "../assets/Close-black.svg";
 import { useScrollVisibility } from "../hooks/useScrollVisibility";
 import { CartVisibilityContext } from "../context/cartVisibility";
 
@@ -44,28 +44,28 @@ function Header() {
                 : "flex gap-2 text-2xl"
             }
           >
-            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:border-b-2 border-white">
+            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:border-b-2 border-white mb:text-3xl mb:mb-4 mb:mt-6">
               <a href="#home" onClick={handleMenuToggle}>
                 Home
               </a>
             </li>
-            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white">
+            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white mb:text-3xl mb:mb-4">
               <a href="#preview-catalog" onClick={handleMenuToggle}>
                 Catalog
               </a>
             </li>
-            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white">
+            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white mb:text-3xl mb:mb-4">
               <a href="#about-us" onClick={handleMenuToggle}>
                 About Us
               </a>
             </li>
-            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white">
+            <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white mb:text-3xl mb:mb-4">
               <a href="#contact" onClick={handleMenuToggle}>
                 Contact
               </a>
             </li>
             {showMenu && (
-              <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white">
+              <li className="hover:underline hover:cursor-pointer py-1 px-4 mb:hover:no-underline mb:no-underline mb:border-b-2 border-white mb:text-3xl mb:mb-4">
                 <a href="#" onClick={handleMenuToggle}>
                   Log In
                 </a>
