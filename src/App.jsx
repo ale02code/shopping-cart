@@ -4,7 +4,7 @@ import WelcomeSection from "./components/Home.jsx";
 import Comments from "./components/Comments.jsx";
 import PreviewCatalog from "./components/Preview-catalog.jsx";
 import Catalog from "./components/Catalog.jsx";
-// import { CatalogVisibilityProvider } from "./context/catalogVisibility.jsx";
+import { CatalogVisibilityProvider } from "./context/catalogVisibility.jsx";
 import Cart from "./components/Cart.jsx";
 import { CartVisibilityProvider } from "./context/cartVisibility.jsx";
 import { CartProvider } from "./context/cartContext.jsx";

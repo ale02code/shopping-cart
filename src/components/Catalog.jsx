@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { CatalogVisibilityContext } from "../context/catalogVisibility";
+import { CatalogVisibilityContext } from "../context/catalogVisibility.jsx";
 import Close from "../assets/Close.svg";
 import Filters from "./Filters.jsx";
 import Products from "./Products-view.jsx";
@@ -7,7 +7,7 @@ import { products as initialProducts } from "../mocks/products.json";
 import { useFilters } from "../hooks/useFilters.js";
 
 function Catalog() {
-  const { CatalogNotVisibility, catalogVisibility } = useContext(
+  const { catalogNotVisibility, catalogVisibility } = useContext(
     CatalogVisibilityContext
   );
 
@@ -20,7 +20,7 @@ function Catalog() {
       <section className="h-[500px] w-[90%] max-w-[950px] flex justify-center items-center bg-black rounded-lg relative overflow-hidden mb:w-full mb:h-full">
         <div
           className="absolute top-4 right-1 hover:cursor-pointer z-50"
-          onClick={CatalogNotVisibility}
+          onClick={catalogNotVisibility}
         >
           <img
             src={Close}

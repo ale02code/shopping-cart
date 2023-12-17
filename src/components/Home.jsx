@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import Welcome from "../assets/welcome.jpg";
 import { CatalogVisibilityContext } from "../context/catalogVisibility";
+("../context/catalogVisibility");
 
 function WelcomeSection() {
-  const { CatalogIsVisibility } = useContext(CatalogVisibilityContext);
+  const { catalogIsVisibility } = useContext(CatalogVisibilityContext);
 
   return (
     <div
@@ -31,7 +32,7 @@ function WelcomeSection() {
 
           <button
             className="bg-white text-black px-4 py-2 rounded font-bold text-2xl text-center hover:bg-transparent border-4 border-white hover:text-white transition-bg duration-150 mb:text-xl"
-            onClick={CatalogIsVisibility}
+            onClick={catalogIsVisibility}
           >
             View The New Catalog
           </button>
