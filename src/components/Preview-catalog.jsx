@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { CatalogVisibilityContext } from "../context/catalogVisibility";
 
 function Catalog() {
-  const { CatalogIsVisibility } = useContext(CatalogVisibilityContext);
+  const { catalogIsVisibility } = useContext(CatalogVisibilityContext);
 
   return (
     <main className="w-screen bg-zinc-800">
@@ -17,7 +17,7 @@ function Catalog() {
               draggable="false"
               src="https://resource.logitech.com/w_880,h_495,c_lfill,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/product-grid/desktop_grey-mice-and-keyboards.png?v=1"
               alt=""
-              onClick={CatalogIsVisibility}
+              onClick={catalogIsVisibility}
             />
             <p className="absolute right-0 left-0 bottom-3 z-20 text-center text-4xl">
               Keyboard And Mouse
@@ -25,7 +25,7 @@ function Catalog() {
           </div>
           <div
             className="row-span-2 overflow-hidden relative mb:col-span-2 mb:h-56"
-            onClick={CatalogIsVisibility}
+            onClick={catalogIsVisibility}
           >
             <img
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-150 hover:cursor-pointer rounded-md"
@@ -39,7 +39,7 @@ function Catalog() {
           </div>
           <div
             className="col-span-1 overflow-hidden relative  mb:col-span-2 mb:h-56"
-            onClick={CatalogIsVisibility}
+            onClick={catalogIsVisibility}
           >
             <img
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-150 hover:cursor-pointer rounded-md"
@@ -53,7 +53,7 @@ function Catalog() {
           </div>
           <div
             className="col-span-1 overflow-hidden relative  mb:col-span-4"
-            onClick={CatalogIsVisibility}
+            onClick={catalogIsVisibility}
           >
             <img
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-150 hover:cursor-pointer rounded-md shadow-2xl shadow-black mb:h-44"
